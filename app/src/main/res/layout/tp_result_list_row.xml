@@ -1,0 +1,106 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/tools"
+    android:id="@+id/tp_cardView_result"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:background="#959899"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/activity_vertical_margin"
+    app:cardElevation="@dimen/activity_vertical_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+            <TextView
+                android:id="@+id/r_checkpoint_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Checkpoint Name" />
+
+
+            <TextView
+                android:id="@+id/r_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Status" />
+
+
+            <TextView
+                android:id="@+id/re_irregularity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Irregularity" />
+
+            <TextView
+                android:id="@+id/r_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="Product" />
+
+        <TextView
+            android:id="@+id/r_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Quantity" />
+
+        <TextView
+            android:id="@+id/r_unit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Unit " />
+
+
+        <TextView
+            android:id="@+id/r_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tp_number"
+            android:text="Value" />
+
+        <TextView
+            android:id="@+id/r_action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Action" />
+
+        <TextView
+            android:id="@+id/r_action_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Amount" />
+
+        <TextView
+            android:id="@+id/r_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desc" />
+
+
+        <TextView
+            android:id="@+id/r_inspected_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inspector" />
+
+        <TextView
+            android:id="@+id/r_created_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="inspected on" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,186 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/tp_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:background="#959899"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/activity_vertical_margin"
+    app:cardElevation="@dimen/activity_vertical_margin">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/list_tp_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="TP Number"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/list_tp_issued_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Issued To" />
+
+
+        <TextView
+            android:id="@+id/list_license_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="License No" />
+
+
+        <TextView
+            android:id="@+id/list_bill_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Bill No." />
+
+        <TextView
+            android:id="@+id/list_from_village"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Form ." />
+
+
+        <TextView
+            android:id="@+id/list_to_village"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="To ." />
+
+        <TextView
+            android:id="@+id/list_vehicle_reg_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:text="Vehicle " />
+
+
+        <TextView
+            android:id="@+id/list_date_of_issue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tp_number"
+            android:text="Date of issued" />
+
+        <TextView
+            android:id="@+id/list_expiry_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expiry Date" />
+
+        <TextView
+            android:id="@+id/list_officer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Officer" />
+
+        <TextView
+            android:id="@+id/list_officer_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Officer Phone" />
+
+
+        <TextView
+            android:id="@+id/list_forest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forest" />
+
+        <TextView
+            android:id="@+id/list_hummer_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hummer No" />
+
+        <TextView
+            android:id="@+id/list_tp_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desc" />
+
+        </LinearLayout>
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/menu_down"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="0dp"
+            android:paddingRight="10dp"
+            android:paddingTop="44dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="10dp"
+            android:elevation="6dp"
+            android:layout_gravity="bottom|end"
+            fab:menu_labels_ellipsize="end"
+            fab:menu_labels_singleLine="true"
+            fab:menu_openDirection="up"
+            fab:menu_animationDelayPerItem="0"
+            fab:menu_shadowColor="#444"
+            fab:menu_colorNormal="#FFB805"
+            fab:menu_colorPressed="#F2AB00"
+            fab:menu_colorRipple="#D99200"
+            >
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btn_product_detail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_shopping_cart_white_18dp"
+                fab:fab_size="normal"
+                fab:fab_label="product details"
+                fab:fab_colorNormal="@color/main_color"
+                fab:fab_colorPressed="@color/fbutton_color_turquoise"
+                fab:fab_colorRipple="@color/fbutton_color_emerald"
+               />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btn_checkpoint_route"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_trending_up_white_24dp"
+                fab:fab_size="normal"
+                fab:fab_colorNormal="@color/main_color"
+                fab:fab_colorPressed="@color/fbutton_color_turquoise"
+                fab:fab_colorRipple="@color/fbutton_color_emerald"
+                fab:fab_label="route checkpoints" />
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btn_cargo_issue"
+                android:text="test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_assignment_turned_in_white_18dp"
+                fab:fab_size="normal"
+                fab:fab_colorNormal="@color/main_color"
+                fab:fab_colorPressed="@color/fbutton_color_turquoise"
+                fab:fab_colorRipple="@color/fbutton_color_emerald"
+                fab:fab_label="inspected reports" />
+
+        </com.github.clans.fab.FloatingActionMenu>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

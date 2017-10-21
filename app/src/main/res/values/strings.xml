@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">TTS</string>
+    <string name="action_settings">Sign Off</string>
+    <string name="action_search">Search</string>
+    <string name="action_sign_of">Sign Off</string>
+    <string name="action_upgrade">Download Update</string>
+    <string name="action_install">Install Update</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Under Construction</string>
+    <string name="title_activity_inspection">InspectionActivity</string>
+    <string name="title_activity_checkpoint">Checkpoint</string>
+    <string name="title_activity_login">CheckpointActivity</string>
+    <string name="irregularities_hint_text">Irregularities</string>
+    <string name="unit_hint_text">Unit</string>
+    <string name="add_desc">click add if you want to add more irregularitties</string>
+    <string name="action_hint_text">Action</string>
+    <string name="product_hint_text">Product</string>
+    <string name="title_activity_product_detail">ProductDetailActivity</string>
+    <string name="title_activity_route_activity">RouteActivityActivity</string>
+    <string name="title_activity_route">RouteActivity</string>
+    <string name="title_activity_issue">IssueActivity</string>
+    <string name="title_activity_print">PrintActivity</string>
+
+
+    <string name="printing_wait">Printing, please wait……</string>
+    <string name="noPaper">No paper</string>
+    <string name="noPaperNotice">No paper, please put paper in and retry</string>
+    <string name="LowBattery">Low battery, please connect the charger!</string>
+    <string name="overTemp">over temp !</string>
+    <string name="ptintInit">Printer initialing... Please try again after a few seconds.</string>
+    <string name="outOfLeft">Beyond the left margin！</string>
+    <string name="outOfLine">Beyond the row space！</string>
+    <string name="outOfFont">Beyond the font size！</string>
+    <string name="outOfGray">Beyond the gray level！</string>
+    <string name="empty">The content is empty！</string>
+    <string name="lengthNotEnougth">The length is not enough！</string>
+    <string name="dialog_comfirm">ConFirm</string>
+    <string name="operation_result">Result</string>
+    <string name="bl_dy">Print</string>
+    <string name="sure">sure</string>
+</resources>

@@ -1,0 +1,95 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/checkpoint_cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="@dimen/activity_vertical_margin"
+    app:cardElevation="@dimen/activity_vertical_margin">
+    <!--<TextView-->
+        <!--android:id="@+id/citem_np"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="left"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:text="1"-->
+        <!--android:textSize="20sp" />-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="193dp"
+        android:padding="16dp">
+
+
+        <TextView
+            android:text="Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/checkpoint_name" />
+
+        <TextView
+            android:text="Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/checkpoint_name"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            android:id="@+id/checkpoint_status" />
+
+        <TextView
+            android:text="Type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_exceptional"
+            android:layout_alignRight="@+id/checkpoint_status"
+            android:layout_alignEnd="@+id/checkpoint_status"
+            android:id="@+id/txt_exceptional_type" />
+
+        <TextView
+            android:text="Fine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_exceptional"
+            android:layout_alignLeft="@+id/checkpoint_name"
+            android:layout_alignStart="@+id/checkpoint_name"
+            android:layout_marginTop="19dp"
+            android:id="@+id/txt_finedAmount" />
+
+        <TextView
+            android:text="quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_finedAmount"
+            android:layout_alignRight="@+id/txt_exceptional_type"
+            android:layout_alignEnd="@+id/txt_exceptional_type"
+            android:id="@+id/txt_productQuantity" />
+
+        <TextView
+            android:text="exceptional"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_exceptional"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/checkpoint_name"
+            android:layout_alignStart="@+id/checkpoint_name" />
+
+        <TextView
+            android:text="inspected By"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/inspected_by" />
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

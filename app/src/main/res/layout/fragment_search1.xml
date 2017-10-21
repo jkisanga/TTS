@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    tools:context="tzchoice.kisanga.joshua.tts.Fragments.SearchFragment">
+
+    <LinearLayout
+        android:id="@+id/linear_tp"
+        android:layout_marginTop="2dp"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_marginRight="10dp"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_width"
+            android:inputType="number"
+            android:background="@drawable/round"
+            android:hint="TP No"
+            android:ems="10"
+            android:layout_weight="4"
+            android:id="@+id/edt_search_tp" />
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/btn_search_tp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            fbutton:buttonColor="@color/fbutton_color_emerald"
+            fbutton:shadowColor="@color/fbutton_color_pomegranate"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+            android:text="Search" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:background="@drawable/bg_messages"
+        android:layout_below="@+id/linear_tp"
+        android:id="@+id/fragment_container_tp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        </FrameLayout>
+</RelativeLayout>

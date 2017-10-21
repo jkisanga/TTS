@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_inspection"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="tzchoice.kisanga.joshua.tts.InspectionActivity"
+    tools:showIn="@layout/activity_inspection">
+
+    <RelativeLayout
+        android:id="@+id/input_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="1dp"
+            android:text="Inspection Form"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="2dp"
+            android:background="#ff9703" />
+
+        <TextView
+            android:text="Cargo Status :"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/textView" />
+<RadioGroup
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_below="@+id/textView"
+    android:id="@+id/radioGroup"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+        <RadioButton
+            android:text="OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView"
+
+            android:layout_marginRight="9dp"
+            android:layout_marginEnd="99dp"
+            android:id="@+id/radioButton_ok" />
+
+        <RadioButton
+            android:text="NOT OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/radioButton_ok"
+            android:layout_alignLeft="@+id/radioButton_ok"
+            android:layout_alignStart="@+id/radioButton_ok"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="9dp"
+            android:id="@+id/radioButton_not" />
+</RadioGroup>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/radioGroup"
+            android:layout_marginTop="10dp"
+            android:background="#ff9703" />
+
+        <TextView
+            android:text="Irregularities :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+           android:layout_below="@+id/view2"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/txt_irregularities" />
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txt_irregularities"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <Spinner
+            android:layout_width="0dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round"
+            android:layout_height="@dimen/activity_width"
+            android:layout_weight="4"
+            android:id="@+id/sp_irregularities" />
+        <Spinner
+            android:gravity="center"
+            android:layout_weight="4"
+            android:background="@drawable/round"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_width"
+            android:id="@+id/sp_product" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/activity_width"
+                android:inputType="number"
+                android:textAlignment="center"
+                android:background="@drawable/round"
+                android:hint="quantity"
+                android:ems="10"
+                android:id="@+id/edt_volume"
+                android:layout_weight="4" />
+            <Spinner
+                android:gravity="center"
+                android:layout_weight="4"
+                android:background="@drawable/round"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/activity_width"
+                android:id="@+id/sp_unit" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linear7"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_width"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:background="@drawable/round"
+            android:hint="value"
+            android:ems="10"
+            android:layout_weight="4"
+            android:id="@+id/edt_value" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view0"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linear7"
+            android:layout_marginTop="20dp"
+            android:background="#ff9703" />
+        <TextView
+            android:text="Action Taken :"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view0"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/textView0" />
+        <LinearLayout
+            android:id="@+id/linear4"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/textView0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:layout_width="0dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/round"
+                android:layout_height="@dimen/activity_width"
+                android:layout_weight="4"
+                android:id="@+id/sp_action" />
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="@dimen/activity_width"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:hint="amount"
+            android:layout_weight="4"
+            android:background="@drawable/round"
+            android:ems="10"
+            android:id="@+id/edt_amount" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear5"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/linear4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/activity_width"
+                android:textAlignment="center"
+                android:inputType="text"
+                android:background="@drawable/round"
+                android:hint="receipt no"
+                android:ems="10"
+                android:layout_weight="4"
+                android:id="@+id/edt_receipt_no" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4" />
+            </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/linear8"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/linear5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/activity_width"
+                android:inputType="text"
+                android:textAlignment="center"
+                android:background="@drawable/round"
+                android:hint="more description if any"
+                android:maxLines="4"
+                android:layout_weight="4"
+                android:id="@+id/edt_more_desc" />
+
+            </LinearLayout>
+
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linear8"
+            android:layout_marginTop="20dp"
+            android:background="#ff9703" />
+        <LinearLayout
+            android:id="@+id/linear6"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/fbtn_add"
+                android:layout_marginRight="20dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                fbutton:buttonColor="@color/fbutton_color_turquoise"
+                fbutton:shadowColor="@color/fbutton_color_pomegranate"
+                fbutton:shadowEnabled="true"
+                fbutton:shadowHeight="5dp"
+                fbutton:cornerRadius="5dp"
+                android:text="Add" />
+
+            <info.hoang8f.widget.FButton
+                android:id="@+id/fbtn_submit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+            android:layout_weight="4"
+            fbutton:buttonColor="@color/fbutton_color_orange"
+            fbutton:shadowColor="@color/fbutton_color_pomegranate"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="5dp"
+            fbutton:cornerRadius="5dp"
+                android:text="Submit" />
+
+        </LinearLayout>
+        <View
+            android:id="@+id/view4"
+            android:layout_width="fill_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linear6"
+            android:layout_marginTop="9dp"
+            android:background="#ff9703" />
+    </RelativeLayout>
+</ScrollView>
