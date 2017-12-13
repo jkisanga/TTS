@@ -7,7 +7,7 @@ package tzchoice.kisanga.joshua.tts;
 public class Constant {
 
     //public final static String url = "http://192.168.43.90:8080/ttsgo/public/";
-   public final static String url = "http://tts1.tfs.go.tz/";
+   public final static String url = "http://tts.nature-reserves.go.tz/";
   // public final static String url = "http://tts.tfs.go.tz/";
     public final static String KEY_TPID = "tp_id";
     public final static String KEY_TPNO = "tp_no";
